@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-BG: hsl(217, 54%, 11%);
+    --container: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+}
+body{
+    background-color: var(--main-BG);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Outfit";
+
+}
+.container, img:nth-of-type(1){
+    border-radius: 10px;
+}
+
+.container{
+    background-color: var(--container);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    max-width: 350px;
+    margin-top: 10rem;
+}
+img{
+    width: 100%;
+}
+h1{
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+p{
+    color: var(--soft-blue);
+
+}
+.date-price{
+    color: var(--main-BG);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.price{
+    
+    color: var(--Cyan);
+    font-weight: 700;
+}
+.icon{
+    width: 0.8rem;
+}
+.time{
+    margin-left: auto;
+    color: var(--soft-blue);
+}
+.line{
+    width: 100%;
+    background-color: var(--line);
+    height: 2px;
+}
+.righter{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    letter-spacing: 0.04rem;
+}
+.pic{
+    width: 1.9rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+}
+.creation{
+    color: var(--soft-blue);
+}
+span{
+    color: var(--white);
+}
+.attribution{
+    height: 200px;
+    margin-top: 100px;
+    color: var(--soft-blue);
+
+}
+.attribution a{
+    color: var(--white);
+    text-decoration: none;
+}
+h1:hover
+, .time:hover
+, span:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+    transition: 0.5s;
+}
